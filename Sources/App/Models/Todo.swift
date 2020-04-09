@@ -4,6 +4,8 @@ import Vapor
 /// A single entry of a Todo list.
 final class Todo: SQLiteModel {
     /// The unique identifier for this `Todo`.
+    typealias Database = SQLiteDatabase
+    
     var id: Int?
 
     /// A title describing what this `Todo` entails.
